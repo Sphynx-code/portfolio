@@ -1,0 +1,422 @@
+body{
+    animation: appear 1.3s ease-in-out;
+
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+#occupation{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    display: inline-block;
+
+}
+h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    border-right: 7px solid white;
+    padding: 5px;
+    white-space: nowrap;
+    width:100%;
+    overflow: hidden;
+    animation: 3s typing,
+                .4s blinking step-end infinite alternate;
+
+}
+
+.linebar{
+
+    width:100%;
+    height: 10px;
+    background: linear-gradient(155deg, rgba(221,221,221,1) 46%, rgba(0,0,0,1) 53%);
+    margin-bottom: 15px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+h3{
+
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+h4{
+    font-family: sans-serif;
+
+}
+
+.Skills{
+    padding: 22px;
+}
+.skill{
+    margin-bottom: 22px;
+    width: 100%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+.projects{
+    padding: 22px;
+}
+.loading-bar{
+    border: 5px solid rgba(255, 255, 255, 0.753);
+    height: 30px;
+    padding: 7px;
+}
+.loading-bar-projects{
+    width: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.753);
+    height: 35px;
+    padding: 7px;
+}
+.loading-line{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+.loading-line-projects{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    animation: loading-projects 3s forwards cubic-bezier(0,0,0,0)
+}
+.fade-out{
+transition: opacity 1.6s;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 1.9s;
+}
+
+.fade-out.hide{
+    opacity: 0;
+}
+.fade-in.show{
+    opacity: 1;
+}
+.project{
+    margin-bottom: 15px;
+}
+.animate-html{
+    animation: loading-html 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-css{
+    animation: loading-css 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-js{
+    animation: loading-js 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-react{
+    animation: loading-react 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-node{
+    animation: loading-node 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-express{
+    animation: loading-express 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-api{
+    animation: loading-api 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-ejs{
+    animation: loading-ejs 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-git{
+    animation: loading-git 4.1s forwards cubic-bezier(0,0,0,0);
+}
+.animate-db{
+    animation: loading-db 4.1s forwards cubic-bezier(0,0,0,0);
+}
+
+.loading-projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+  }
+  
+ .button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button:hover::before {
+    width: 250%;
+  }
+  
+/* From Uiverse.io by Mhyar-nsi */ 
+.project-btn{
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 200px;
+    height: 45px;
+    transition: 0.3s;
+  }
+  
+  .project-btn:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.invert{
+    margin-right: 10px;
+}
+/* Hover affect on social media icon */
+.invert:hover{
+    filter: invert(1);
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+ @media (max-width: 765px) {
+ #occupation{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%,0%);
+ }
+ h1{
+    white-space: wrap;
+ }
+ .loading-bar{
+    width: 100%;
+ }
+
+  }
+  
+  @media (width: 344px) {
+    #occupation{
+       position: absolute;
+       top: 50%;
+       left: 4%;
+       transform: translate(0%,0%);
+    }
+    h1{
+        white-space: wrap;
+     }
+     .loading-bar{
+        width: 100%;
+     }
+     }
+     
+  
+  @media (width: 1024px) {
+    #occupation{
+       position: absolute;
+       top: 50%;
+       left: 21%;
+       transform: translate(0%,0%);
+    }
+     } 
+
+   @media (min-width: 1000px) {  
+    .skill{
+        width: 60%;
+    }
+        .grid{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+          }
+          .loading-bar-projects{
+            width: 60%;
+          }
+        
+      } 
+     
+ @keyframes blinking{
+        50%{border-color: transparent;}
+ }
+ @keyframes typing {
+    from{width:0}
+ }
+ @keyframes loading-html {
+    0%{
+        width:0%
+    }
+    100%{
+        width:85%
+    }
+ }
+ @keyframes loading-css{
+    0%{
+        width:0%
+    }
+    100%{
+        width:75%
+    }
+ }
+ @keyframes loading-js{
+    0%{
+        width:0%
+    }
+    100%{
+        width:70%
+    }
+ }
+ @keyframes loading-react{
+    0%{
+        width:0%
+    }
+    100%{
+        width:90%
+    }
+ }
+ @keyframes loading-node{
+    0%{
+        width:0%
+    }
+    100%{
+        width:75%
+    }
+ }
+ @keyframes loading-express{
+    0%{
+        width:0%
+    }
+    100%{
+        width:80%
+    }
+ }
+ @keyframes loading-api{
+    0%{
+        width:0%
+    }
+    100%{
+        width:90%
+    }
+}
+ @keyframes loading-ejs{
+    0%{
+        width:0%
+    }
+    100%{
+        width:95%
+    }
+}
+ @keyframes loading-git{
+    0%{
+        width:0%
+    }
+    100%{
+        width:90%
+    }
+}
+ @keyframes loading-db{
+    0%{
+        width:0%
+    }
+    100%{
+        width:85%
+    }
+}
+@keyframes loading-projects {
+    0%{
+        width:0%
+    }
+    100%{
+        width:100%
+    }
+}
